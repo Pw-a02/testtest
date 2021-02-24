@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Reserve</title>
+    <link rel="stylesheet" href="new.css">
+</head>
+
+<body>
+    <div class="topnav">
+        <a href="#">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction()">type
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+                <a href="#">hotel</a>
+                <a href="#">hostel</a>
+                <a href="#">house</a>
+            </div>
+        </div>
+        <a href="#compare">compare</a>
+        <a href="acc.html">Account</a>
+        <!-- <div id="acc" class="contain-box">
+            <div class="form-box">
+                <div class="button-box">
+                    <div id="btn"></div>
+                    <button type="button" class="toggle-btn" onclick="Login()">Log in</button>
+                    <button type="button" class="toggle-btn" onclick="Signup()">Sign up</button>
+                </div>
+                <div class="social-icons">
+                    <img src="facebook (1).png">
+                    <img src="twitter.png">
+                    <img src="google-plus.png">
+                </div>
+                <form id="Login" class="input-group">
+                    <input type="text" class="input-field" placeholder="Username" required>
+                    <input type="text" class="input-field" placeholder="Password" required>
+                    <input type="checkbox" class="check-box"><span>Remember Password</span>
+                    <button type="submit" class="submit-btn">Log in</button>
+                </form>
+                <form id="Signup" class="input-group">
+                    <input type="email" class="input-field" placeholder="Username" required>
+                    <input type="email" class="input-field" placeholder="Email" required>
+                    <input type="text" class="input-field" placeholder="Password" required>
+                    <input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
+                    <button type="submit" class="submit-btn">Sign up</button>
+                </form>
+            </div>
+        </div>
+        <script>
+            var x = document.getElementById("Login");
+            var y = document.getElementById("Signup");
+            var z = document.getElementById("btn");
+
+            function Signup() {
+                x.style.left = "-400px";
+                y.style.left = "50px";
+                z.style.left = "110px";
+            }
+
+            function Login() {
+                x.style.left = "50px";
+                y.style.left = "450px";
+                z.style.left = "0";
+            }
+        </script> -->
+
+        <div class="search">
+            <form action="/action_page.php">
+                <input type="text" placeholder="Search here" name="Search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+    <script>
+        /* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (e) {
+            if (!e.target.matches('.dropbtn')) {
+                var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains('show')) {
+                    myDropdown.classList.remove('show');
+                }
+            }
+        }
+    </script>
+    <div class="banner">
+        <img src="banner.1.jpg">
+    </div>
+
+    <div class="recommend">
+        <div class="p1">
+            <a href="#"><img src="hotel.jpg"></a>
+            <div class="p2"></div>
+            <a href="#"><img src="hostel.jpg"></a>
+            <div class="p3"></div>
+            <a href="#"><img src="house.jpg"></a>
+        </div>
+    </div>
+</body>
+
+</html>
