@@ -77,13 +77,13 @@
     </div>
     <script>
         /* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
+                                                                                                                                                                                                                                                                                                                                toggle between hiding and showing the dropdown content */
         function myFunction() {
             document.getElementById("myDropdown").classList.toggle("show");
         }
 
         // Close the dropdown if the user clicks outside of it
-        window.onclick = function (e) {
+        window.onclick = function(e) {
             if (!e.target.matches('.dropbtn')) {
                 var myDropdown = document.getElementById("myDropdown");
                 if (myDropdown.classList.contains('show')) {
@@ -92,17 +92,53 @@ toggle between hiding and showing the dropdown content */
             }
         }
     </script>
-    <div class="banner">
+    <!-- <div class="banner">
         <img src="banner.1.jpg">
+    </div> -->
+
+    <div class="hero">
+        <div class="m2">
+            <img src="hostel1.jpg" alt="hostel">
+        </div>
+        <div class="contain-text">
+            <div>
+                <h2>Let's find some place</h2>
+            </div>
+            <div>
+                <h2 class="s">to stay with us!</h2>
+            </div>
+        </div>
     </div>
 
     <div class="recommend">
-        <div class="p1">
-            <a href="#"><img src="hotel.jpg"></a>
-            <div class="p2"></div>
-            <a href="#"><img src="hostel.jpg"></a>
-            <div class="p3"></div>
-            <a href="#"><img src="house.jpg"></a>
+        <div class="pic">
+            <div class="p1">
+                <a href="#"><img src="hotel.jpg"></a>
+                <div class="p2"></div>
+                <a href="#"><img src="hostel.jpg"></a>
+                <div class="p3"></div>
+                <a href="#"><img src="house.jpg"></a>
+            </div>
+        </div>
+    </div>
+    <div class="word">
+        <div class="word-head">
+            <h3>Explore the world</h3>
+            <p>If you never go, you'll never know.</p>
+        </div>
+        <div class="cm">
+            <img src="cm.jpg">
+            <p>Chiang Mai is a land of misty mountains and colourful hill tribes, a playground for seasoned travellers, a paradise for shoppers and a delight for adventurers. On a trip to Chiang Mai, the curious traveller can expand their horizons with Thai
+                massage and cooking courses. Others will be bowled over by the variety of handicrafts and antiques. The wild child will find plenty of lively nightlife, and the epicure can indulge in wonderful cuisine. Despite its relatively small size,
+                Chiang Mai truly has it all.
+            </p>
+        </div>
+        <div class="phuket">
+            <p>Phuket is among the world’s finest beach destinations, with fine white sands, nodding palm trees, glittering seas and lively towns. It has something for a wide array of tastes and budgets, with hundreds of hotels to choose from, an eclectic
+                choice of dining and plenty of partying options. Aside from visiting the fantastic attractions of Thailand’s biggest island, you can take an exhilarating speedboat trip to the many nearby tropical islands, including the famous Koh Phi
+                Phi, or enjoy a serene cruise around the mystical Phang Nga Bay.
+            </p>
+            <img src="phuket.jpg">
         </div>
     </div>
 </body>
